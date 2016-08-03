@@ -33,7 +33,7 @@ for i := 0; i < 10000000; i++ {
 }
 body1 := bf1.String()
 
-s = time.Now().UnixNano()
+s := time.Now().UnixNano()
 btos.StringToBytes(body1)
 fmt.Printf("string to bytes, btos.StringToBytes(string) usetime: %v\n", time.Now().UnixNano()-s)
 
