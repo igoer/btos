@@ -1,11 +1,11 @@
 # btos
  Efficient conversion tool for string and []byte
 ###Download and install
-```
+```go
 go get github.com/igoer/btos
 ```
 ###Example bytes to string
-```
+```go
 bf := &bytes.Buffer{}
 for i := 0; i < 10000000; i++ {
 	bf.WriteString("A")
@@ -26,7 +26,7 @@ bytes to string, btos.BytesToString([]byte) usetime: 0
 bytes to string, string([]byte) usetime: 3000200
 ```
 ###Example string to bytes
-```
+```go
 bf1 := &bytes.Buffer{}
 for i := 0; i < 10000000; i++ {
 	bf1.WriteByte(65)
